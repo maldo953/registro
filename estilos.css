@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+body{
+	background: #bbb;
+}
+:root{
+	--clip: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+/*nav */
+.nav{
+	background: #333;
+	width: 100%;
+	height: 50px;
+}
+/*****************/
+.div_formulario{
+	padding: 2rem;
+	margin: auto;
+	width: 350px;
+}
+.div_formulario h1{
+	color: #fff;
+	background: #333;
+	display: block;	
+	text-align: center;
+	letter-spacing: 5px;
+}
+.form{
+	background: #fff;
+	margin: auto;
+	padding:15px 50px;
+}
+.lbl{
+	z-index: 1;
+	font-size: 10px;
+}
+.div_input{
+	padding: 5px;
+}
+.input{
+	text-indent:5px;
+	padding-right: 5px;
+	display: block;
+	border: none;
+	border-bottom: #000 2px solid;
+	width: 100%;
+	height: 30px;
+	font-size: 14px;
+}
+.select{
+	display: block;
+	border: none;
+	border-bottom: #000 2px solid;
+	width: 100%;
+	height: 30px;
+	font-size: 14px;
+}
+.input:focus{
+	background: #fff;
+	outline: none;
+}
+.select:focus{
+	outline: none;
+}
+.msj{
+	transition-property: background-color;
+	transition-duration: 5s;
+	transition-timing-function: ease;
+	transition-delay: linear;
+}
+.success{
+	display: flex;
+	justify-content: space-around;
+   	flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+	position: absolute;
+	width: 350px;
+	height: 50px;
+	background: #26BF3A;
+	color: #13601D;
+}
+.error{
+	display: flex;
+	justify-content: space-around;
+   	flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+	position: absolute;
+	width: 350px;
+	height: 50px;
+	background: #DF0000;
+	color: #FFDADA;
+}
+.advertencia{
+	display: flex;
+	justify-content: space-around;
+   	flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+	position: absolute;
+	width: 350px;
+	height: 50px;
+	background: #FFAC00;
+	color: #604000;
+}
+.advertencia::before{
+	display: block;
+	clip-path: var(--clip);
+
+}
+.btn{
+	padding: 5px 10px;
+	background: #3390FF;
+	color: #fff;
+	border: none;
+	border-radius: 2px;
+	width: 100%;
+	height: 30px;
+}
+.btn:hover{
+	background: #205A9F;
+	cursor: pointer;
+}
