@@ -1,8 +1,8 @@
 <?php
-$host = 'localhost';
-$user = 'root';
-$pass = '';
-$db = 'test';
+$host = 'ec2-54-235-98-1.compute-1.amazonaws.com';
+$user = 'jhibweezzjbide';
+$pass = 'bf1f62a08e6436628a371bea946db8e7ede7b072b702a6e31c4dd69a4b1e1554';
+$db = 'd23i4qcajjc7hk';
 $conn = mysqli_connect($host, $user,$pass,$db);
 if (!$conn){
 	die("Connection failed: " . mysqli_connect_error());
